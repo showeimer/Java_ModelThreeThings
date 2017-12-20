@@ -7,5 +7,9 @@ public class Runner {
         myCar.printInfo();
         myDog.printInfo();
         myClass.printInfo();
+
+        Van myVan = new Van(true, "Gray", "Kia", 2017, false);
+        myVan.printInfo();
     }
+
 }

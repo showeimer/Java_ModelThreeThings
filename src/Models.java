@@ -45,3 +45,20 @@ class Subject {
         System.out.println("I am taking a " + courseLength + " week " + subjectName + " class with Professor " + teacherName);
     }
 }
+
+class Van extends Car {
+    boolean handicapFriendly;
+    String color;
+
+    public Van (boolean handicapFriendly, String color, String model, int year, boolean isHybrid) {
+        super(model, year, isHybrid);
+        this.handicapFriendly = handicapFriendly;
+        this.color = color;
+    }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Handicap Friendly: " + handicapFriendly + ". Color: " + color);
+    }
+}
